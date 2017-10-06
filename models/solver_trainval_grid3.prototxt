@@ -1,0 +1,14 @@
+net: "models/train_val_grid3.prototxt"
+test_iter: 100
+test_interval: 10000
+base_lr: 0.001
+lr_policy: "step"
+gamma: 0.1
+stepsize: 150000
+display: 20
+max_iter: 400000
+momentum: 0.9
+weight_decay: 0.0005
+average_loss: 100
+snapshot: 50000
+snapshot_prefix: "output/selfsup/sinkhorn_grid3"
